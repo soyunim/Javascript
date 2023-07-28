@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>DOM 이벤트 처리기 예시</title>
+        
+        <style>
+            #item {
+                position:relative;
+                width:500px;
+                height:auto;
+                padding:15px 20px;
+                margin:auto;
+            }
+            button {
+                background-color:rgba(255,255,255,0.7);;
+                padding:5px;
+                border:1px solid #ccc;
+                font-size:0.8em;			
+            }
+            .over {
+                position:absolute;
+                left:30px;
+                bottom:400px;
+            }
+            .detail {
+                width:400px;
+                text-align:left;			
+                line-height:1.8;
+                display:none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="img.png" alt="">
+        <button class="over" id="open">상세설명보기</button>
+        <div id="desc" class="detail">
+            <h4>이창섭</h4>
+            <p>대한민국의 가수 겸 뮤지컬 배우이다. 6인조 보이그룹 비투비의 멤버이며, 리드보컬을 맡고 있다.</p>
+            <button id="close">상세설명닫기</button>
+        </div>
+
+        <script>
+            document.querySelector('#open').onclick = function(){
+                document.querySelector("#desc").style.display = "block";
+                document.querySelector("#open").style.display = "none";
+            }
+
+            document.querySelector('#close').onclick = function(){
+                document.querySelector("#desc").style.display = "none";
+                document.querySelector("#open").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
