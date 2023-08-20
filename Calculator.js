@@ -1,21 +1,21 @@
 const calculator = {
     plus: function(a,b){
-        console.log(a+"+"+b+"="+(a+b));
+        return a+b;
     },
     minus: function(a,b){
-        console.log(a+"-"+b+"="+(a-b));
+        return a-b;
     },
     divide: function(a,b){
-        console.log(a+"/"+b+"="+(a/b));
+        return a/b;
     },
     multiply: function(a,b){
-        console.log(a+"*"+b+"="+(a*b));
+        return a*b;
     },
     mod: function(a,b){
-        console.log(a+"%"+b+"="+(a%b));
+        return a%b;
     },
     power: function(a,b){
-        console.log(a+"**"+b+"="+(a**b));
+        return a**b;
     },
 }
 
