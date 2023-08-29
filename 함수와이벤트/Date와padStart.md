@@ -6,7 +6,7 @@
 - getMinutes()
 - getSeconds()
 
-등 다양한 함수가 있다.
+등 다양한 메서드가 있다.
 
 ## padStart, padEnd
 ```
